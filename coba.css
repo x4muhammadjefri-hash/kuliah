@@ -1,0 +1,89 @@
+/*Live Demo Code: navbar.css
+/* Reset Global Modern */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Menambahkan CSS grid dan footer*/
+
+/* CSS grid untuk menampilkan daftar artikel/portofolio */
+.grid-container {
+
+    display: grid ; 
+    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+
+}
+/*menampilkan daftar artikel/portofolio minimal 4 kartu*/
+.card {
+    background-color: #ffffff;
+    border: #1278d8;
+    border-radius: 40px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0.1);
+
+
+}
+
+/* mengimplementasikan Flexbox pada Header/Navbar dan Footer*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 1.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding : 1.5rem;
+    background-color: #ffffff;
+    border-top: #e2e8f0;
+    margin-top: 2rem;
+    color: #64748b;
+}
+
+
+
+
+
