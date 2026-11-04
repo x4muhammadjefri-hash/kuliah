@@ -9,6 +9,9 @@ Repositori ini berisi kumpulan tugas mata kuliah Praktikum Pemrograman Web - Kel
                >menggunakan filter() untuk menyaring kategori tertentu, map() untuk menghitung subtotal tiap barang, dan reduce() untuk total keseluruhan.
                >serta merapkan destructuring dan arrow functions pada seluruh fungsi pemrosesan data. (`tugas-es6.mjs`).
 
+* **Tugas5** : Sebuah Pencarian Mengenai Profil Akun GitHub dimana dapat menampilkan sebuah Profil Username Sederhana
+                (`searchinggithub.html`)
+
 
 ## Biodata
 * **Nama:** Muhammad Jefri
