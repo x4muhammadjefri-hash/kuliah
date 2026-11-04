@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencari Profil GitHub</title>
+   
+</head>
+<body>
+    <form id = "search-Form" onsubmit="CariProfil(event)">
+        <fieldset>
+            <div>
+                <label for = usernameInput></label>
+                <h3>APK Pencarian Profil GitHub </h3>
+                <input type=" text" id="usernameInput" placeholder="Masukkan username GitHub...">
+            </div>
+            <div>
+                <button type = "submit"> Cari </button>
+            </div>
+        </fieldset>
+
+    </form>
+<div id="loading" style="display: none;">Memuat data...</div>
+<div id="user-container"></div>
+
+
+</body>
+<script>
+
+    const usernameInput = document.getElementById("usernameInput");
+    const userContainer = document.getElementById("user-container");
+    const loadingIndicator = document.getElementById("loading");
+
+
+
+async function CariProfil(event) {
+
+  
+  const username = usernameInput.value.trim();
+    
+  
+  if (!username) {
+      alert("Masukkan Username yg kau cari terlebih dulu ");
+    return};
+
+
+  try {
+    loadingIndicator.style.display = "block";
+    const response = await fetch(`https://api.github.com/users/${username}`);
+
+
+    if (!response.ok) {
+      if (response.status === 404) {
+      throw new Error("Username tidak ditemukan!");
+      }
+      throw new Error("HTTP Error! Status: " + response.status);
+    }
+    const data = await response.json(); 
+
+    const card = document.createElement("div");
+    card.className = "Profil-Card";
+    card.innerHTML = `
+    <h4>${data.login}</h4>
+    <p><img src="${data.avatar_url}" alt="Avatar" width="100"></p>
+    <p><small>Bio: ${data.bio || "Tidak ada bio."}</small></p>
+    <p><small>Public Repos: ${data.public_repos}</small></p>
+    <p><small><a href="${data.html_url}" target="_blank">Buka Profil GitHub</a></small></p>`; 
+
+userContainer.appendChild(card);
+  
+
+} catch (error) {
+    console.error(error);
+userContainer.innerHTML = 
+`<p class="error404">Gagal memuat data: ${error.message}</p>`;
+
+  } finally {
+    loadingIndicator.style.display = "none";
+  }
+}
+
+</script>
+</html>
