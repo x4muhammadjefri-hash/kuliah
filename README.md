@@ -13,7 +13,7 @@ Repositori ini berisi kumpulan tugas mata kuliah Praktikum Pemrograman Web - Kel
                 (`searchinggithub.html`)
 
 
-* **Tugas6**  : Penyelesaian tugas6 untuk mencatat Buku yang sudah dibaca maupun belum dibaca dan dilengkapi fitur JSON untuk menyimpan history yang sudah di inputkan. ('praktikum-vue')
+* **Tugas6**  : Penyelesaian tugas6 untuk mencatat Buku yang sudah dibaca maupun belum dibaca dan dilengkapi fitur JSON untuk menyimpan history yang sudah di inputkan. (`praktikum-vue`)
 
 
 ## Biodata
