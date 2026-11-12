@@ -11,6 +11,7 @@ Repositori ini berisi kumpulan tugas mata kuliah Praktikum Pemrograman Web - Kel
 
 * **Tugas5** : Sebuah Pencarian Mengenai Profil Akun GitHub dimana dapat menampilkan sebuah Profil Username Sederhana
                 (`searchinggithub.html`)
+**Tugas6**  : Penyelesaian tugas6 untuk mencatat Buku yang sudah dibaca maupun belum dibaca dan dilengkapi fitur JSON untuk menyimpan history yang sudah di inputkan. ('praktikum-vue')
 
 
 ## Biodata
