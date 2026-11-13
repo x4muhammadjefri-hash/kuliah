@@ -24,6 +24,10 @@ const tambahBuku = () => {
 const totalSelesai = computed(() => {
   return daftarBuku.value.filter(buku => buku.selesai).length
 })
+const hapusBuku = (index) => {
+  daftarBuku.value.splice(index, 1)
+}
+
 </script>
 
 <template>
@@ -48,18 +52,25 @@ const totalSelesai = computed(() => {
         </label>
       </div>
       <button type="submit">Tambah Buku</button>
+  
+
     </form>
-   
+
+    
 
     <hr />
 
     <h3>Daftar Buku (Total Selesai Dibaca: {{ totalSelesai }})</h3>
-    <ul>
-      <li v-for="(buku, index) in daftarBuku" :key="index">
-        <strong>{{ buku.judul }}</strong> - {{ buku.kategori }} 
-        <span>({{ buku.selesai ? 'Sudah dibaca' : 'Belum dibaca' }})</span>
-      </li>
-    </ul>
+<ul>
+  <li v-for="(buku, index) in daftarBuku" :key="index">
+    <strong>{{ buku.judul }}</strong> - {{ buku.kategori }} 
+    <span>({{ buku.selesai ? 'Sudah dibaca' : 'Belum dibaca' }})</span>
+    <button @click="hapusBuku(index)" style="margin-left: 10px; color: red;">
+      Hapus
+    </button>
+  </li>
+</ul>
+
   </div>
   <h3>&copy JefriTI049/2026</h3>
 
