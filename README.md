@@ -13,8 +13,9 @@ Repositori ini berisi kumpulan tugas mata kuliah Praktikum Pemrograman Web - Kel
                 (`searchinggithub.html`)
 
 
-* **Tugas6**  : Penyelesaian tugas6 untuk mencatat Buku yang sudah dibaca maupun belum dibaca dan dilengkapi fitur JSON untuk menyimpan history yang sudah di inputkan. (`praktikum-vue`)
-
+* **Tugas6**  : Penyelesaian tugas6 dan **Tugas7**
+* untuk mencatat Buku yang sudah dibaca maupun belum dibaca dan dilengkapi fitur JSON untuk menyimpan history yang sudah di inputkan. (`praktikum-vue`)
+*membuat katalog barang min.3 dan menyambungkan keranjang belanja yang dilengkapi fitur penyimpanan dan hapus tiap index jika diperlukan
 
 ## Biodata
 * **Nama:** Muhammad Jefri
